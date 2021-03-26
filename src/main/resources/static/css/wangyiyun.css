@@ -1,0 +1,521 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+/*user*/
+
+#head {
+	position: fixed;
+	width: 1519px;
+	height: 75px;
+	z-index: 1;
+	background: white;
+}
+
+#head #head-black {
+	position: relative;
+	width: 1519px;
+	height: 70px;
+	background: #242424;
+}
+
+#head #head-red {
+	width: 1519px;
+	height: 5px;
+	background: #c20c0c;
+}
+
+
+
+.head-ul-li {
+	width: 94px;
+	height: 70px;
+	display: block;
+	list-style: none;
+	float: left;
+	text-align: center;
+}
+
+.head-ul-li a {
+	display: block;
+	margin: 25px 10px 10px 10px;
+	color: white;
+	font-size: 14px;
+	text-decoration: none;
+}
+
+.head-ul-li:hover {
+	background: black;
+}
+
+#a-hot {
+	position: absolute;
+	top: 10px;
+	right: 565px;
+	width: 25px;
+	/*background: url(img/HOT.png) no-repeat top -20px right;
+				background-size: 28px;*/
+}
+
+.input-group {
+	position: relative;
+	width: 158px;
+	left: 20px;
+}
+
+.input-group-addon {
+	/*position: absolute;*/
+	height: 34px;
+	width: 30px;
+	background: url(img/sousuo.png) no-repeat top 3px center;
+	background-size: 20px;
+	border-top-left-radius: 50px;
+	border-bottom-left-radius: 50px;
+	background-color: white;
+	outline: none;
+	display: inline-block;
+	margin-top: 10px;
+	float: left;
+	margin-left: 10px;
+}
+
+.form-control {
+	position: absolute;
+	/*position: absolute;*/
+	right: -40px;
+	top: -44px;
+	float: left;
+	height: 34px;
+	width: 220px;
+	border: none;
+	border-top-right-radius: 50px;
+	border-bottom-right-radius: 50px;
+	outline: none;
+	display: inline-block;
+	margin-top: 10px;
+}
+
+#authors {
+	position: absolute;
+	top: 12px;
+	right: 250px;
+	width: 90px;
+	height: 36px;
+	border-top-right-radius: 50px;
+	border-bottom-right-radius: 50px;
+	border-top-left-radius: 50px;
+	border-bottom-left-radius: 50px;
+	/*float: left;*/
+	background: none;
+	border: 1px solid gainsboro;
+	color: white;
+	font-size: 12px;
+	display: inline-block;
+	outline: none;
+}
+
+#authors:hover {
+	border: 2px solid white;
+}
+
+.clearfix {
+	position: absolute;
+	right: 180px;
+	top: 12px;
+}
+
+#dropdownMenuDivider {
+	background: black;
+	border: 1px solid white;
+	border-top-right-radius: 50px;
+	border-bottom-right-radius: 50px;
+	border-top-left-radius: 50px;
+	border-bottom-left-radius: 50px;
+	color: white;
+	outline: none;
+}
+
+#dropdownMenuDivider:hover {
+	border: 2px solid white;
+}
+.nav_info{
+	position: fixed;
+	width: 100%;
+	height: 75px;
+	background-color: red;
+	z-index: 9999999;
+}
+.box{
+	height: 100%;
+	width: 100%;
+}
+.container{
+	width: 982px;
+	/*background-color: khaki;*/
+	padding: 0;
+}
+.song-info{
+	position: fixed;
+	top:75px;
+	width: 240px;
+	height: 825px;
+	 
+	border-left: 0.5px solid #d6d7d6;
+	border-right: 0.5px solid #d6d7d6;
+}
+.song-info .panel-group .panel-body {
+	padding: 0;
+	margin: 0;
+	font-weight: bolder;
+}
+.song-list{
+	margin-top: 75px;
+	width: 740px;
+	height: 825px;
+	border-right: 1px solid #d6d7d6;
+}
+.song-list .mySonger{
+	width: 660px;
+	height: 1125px;
+	background-color: white;
+}
+
+.song-list .mySonger .row{
+	width: 660px;
+	height: 821px;
+	padding: 0;
+	margin: 0;  
+	display: inline;
+}
+.song-list .mySonger .row .col-md-3{
+	width: 165px;
+	height: 162px;
+	
+	
+	position: relative;
+}
+.song-list .mySonger .row .col-md-3 a{
+	position: absolute;
+	left: 0px;
+	bottom: 6px;
+	font-size: 12px;
+}
+.song-list .mySonger .row .col-md-3 span{
+	position: absolute;
+	left: 0;
+	top: 12px;
+	width: 159px;
+	height: 90px;
+	display: inline-block;
+	cursor: pointer;
+}
+
+.song-list .mySonger .row .col-md-3 span:nth-of-type(2) img{
+	position: absolute;
+	left: 0;
+	bottom: -29px;
+}
+.song-list .mySonger .row .col-md-3 span:nth-of-type(2) a{
+	position: absolute;
+	left: 37px;
+	bottom: -29px;
+	font-size: 14px;
+}
+.song-list .mySonger .row .col-md-3:nth-of-type(2n) span{
+	margin-left: 2px;
+}
+.song-list .mySonger .row .col-md-3:nth-of-type(3n) span{
+	margin-left: 4px;
+}
+.song-list .mySonger .row .col-md-3:nth-of-type(4n) span{
+	margin-left: 4px;
+}
+.song-list .mySonger ul{
+	width: 660px;
+	height: 1212px; 	
+	list-style: none;
+}
+.song-list .mySonger ul li{
+	width: 660px;
+	height: 101px;
+	border-bottom: 1px solid #d6d7d6;
+	position: relative;
+	
+}
+.song-list .mySonger ul li .songer_photo{
+	width: 80px;
+	height: 80px;
+	display: inline-block;
+	position: absolute;
+	top: 50%;
+	margin: -40px 0;
+	cursor: pointer;
+}
+
+.song-list .mySonger ul li b{
+	font-size: 16px;
+	position: absolute;
+	left: 100px;
+	top: 24px;
+	color: black;
+}
+.song-list .mySonger ul li b a{
+	color: black;
+}
+.song-list .mySonger ul li p{
+	font-size: 12px;
+	position: absolute;
+	left: 100px;
+	top: 54px;
+}
+.song-list .mySonger .songer-text{
+	width: 660px;
+	height: 42px;
+	
+	display: inline-block;
+	margin-top: 36px;
+	font-size: 24px;
+	border-bottom: 2px solid  #C60C08;
+}
+.panel-group {
+    margin-bottom: 0px;
+    width: 236px;
+    float: right;
+}
+.panel-default {
+    border-color: #fffbff;
+    cursor: pointer;
+}
+.musicbox_header{
+	width: 740px;
+	height: 280px;
+	margin-top: 0;
+	padding: 40px;
+	position: relative;
+}
+ 
+.musicbox_header .musicbox-user span{
+	position: absolute;
+}
+.musicbox_header .musicbox-user img{
+	width: 35px;
+	height: 35px;
+	 
+}
+
+.musicbox_header .musicbox-info {
+	height: 122px;
+	width: 430px;
+	position: absolute;
+	left: 280px;
+	top: 50px;
+}
+.musicbox_header .musicbox-info ul{
+	width: 440px;
+	height: 31px;
+	list-style: none;
+	margin-top: 12px;
+}
+.musicbox_header .musicbox-info ul li{
+	width: 59px;
+	height: 31px;
+	float: left;
+	margin-left: 10px;
+	font-size: 12px;
+	font-family: Arial,Helvetica,sans-serif;
+	display: inline-block;
+	line-height: 31px;
+	overflow: hidden;
+	vertical-align: top;
+	text-align: right;
+	cursor: pointer;
+	color: black;
+}
+.musicbox_header .musicbox-info ul li:nth-of-type(1){
+	width: 66px;
+	background: url(../img/mymusic/按钮/播放按钮hover时.png);
+	
+}
+.musicbox_header .musicbox-info ul li:nth-of-type(1) b{
+	display: inline-block;
+	position: relative;
+	left: -4px;
+	color: white;
+}
+.musicbox_header .musicbox-info ul li:nth-of-type(2){
+	width: 31px;
+	height: 31px;
+	background: url(../img/mymusic/按钮/添加到播放列表按钮未点.png);
+	margin-left: 0;
+	
+}
+.musicbox_header .musicbox-info ul li:nth-of-type(3){
+	background: url(../img/mymusic/按钮/收藏-不可点击态.png);
+	
+}
+.musicbox_header .musicbox-info ul li:nth-of-type(3) b{
+	position: relative;
+	left: -7px;
+}
+.musicbox_header .musicbox-info ul li:nth-of-type(4){
+	background: url(../img/mymusic/按钮/分享-未点击.png);
+}
+.musicbox_header .musicbox-info ul li:nth-of-type(4) b{
+	position: relative;
+	left: -7px;
+}
+.musicbox_header .musicbox-info ul li:nth-of-type(5){
+	background: url(../img/mymusic/按钮/下载-未点击.png);
+}
+.musicbox_header .musicbox-info ul li:nth-of-type(5) b{
+	position: relative;
+	left: -7px;
+}
+.musicbox_header .musicbox-info ul li:nth-of-type(6){
+	background: url(../img/mymusic/按钮/评论-未点击.png);
+}
+.musicbox_header .musicbox-info ul li:nth-of-type(6) b{
+	position: relative;
+	left: -7px;
+}
+.musicbox_header .musicbox-info .musicbox-btn{
+	width: 440px;
+	height: 31px;
+	
+}
+.musicbox_header .musicbox-info .musicbox-btn span:nth-of-type(2) img{
+	width: 32px;
+	height: 30px;
+	background-color: salmon;
+}
+.musicbox_header .musicbox-info .musicbox-btn button{
+	width: 59px;
+	height: 31px;
+}
+.musicbox_header .musicbox-info span:nth-of-type(1){
+	left: 276px;
+	top: 50px;
+	font-size: 24px;
+	display: block;
+}
+.musicbox_header .musicbox-info span:nth-of-type(2){
+	width: 430px;
+	height: 35px;
+	display: inline-block;
+	margin-top: 10px;
+	position: relative;
+	cursor: pointer;
+}
+.musicbox_header .musicbox-info span:nth-of-type(1) img{
+	width: 54px;
+	height: 24px;
+	
+}
+.musicbox_header .musicbox-info span:nth-of-type(2) img{
+	width: 35px;
+	height: 35px;
+	 
+}
+.musicbox_header .musicbox-info span:nth-of-type(2) p{
+	font-size: 12px;
+	position: absolute;
+	top: 9px;
+	margin-left: -48px;
+	color: #d6d7d6;
+}
+.musicbox_header .musicbox-info p{
+	position: absolute;
+	left: 100px;
+	top: 100px;
+}
+.musicbox-img{
+	height: 208px;
+	width: 660px;
+	padding: 0;
+	 
+}
+.musicbox-img img{
+	border: 4px double #d6d7d6;
+	height: 208px;
+	width: 208px;
+
+}
+.musicbox-img img:nth-of-type(2){
+	border: 4px double #d6d7d6;
+	height: 24px;
+	width: 54px;
+
+}
+.musicbox-img p{
+	font-size: 20px;
+	
+}
+.music-til{
+	width: 740px;
+	height: 35px;
+	
+	border-bottom: 2px solid #C60C08;
+}
+.musicbox-title p{
+	float: left;
+	line-height: 35px;
+	
+}
+
+.musicbox-title p:nth-child(1){
+	margin-left: 35px;
+	font-size: 20px;
+	font-family: "Microsoft Yahei",Arial,Helvetica,sans-serif;
+}
+.musicbox-title p:nth-child(2){
+	margin-left: 35px;
+	font-size: 12px;
+	color: gray;
+}
+.musicbox-title p:nth-child(3) {
+	margin-right: 12px;
+	font-size: 12px;
+	color: gray;
+}
+.musicbox-title p:nth-child(3) span{
+	color: red;
+	font-size: 12px;
+}
+
+table thead tr th:nth-of-type(1){
+	
+	width: 74px;
+	height: 34px;
+	background: url(../img/mymusic/menubar.png);
+	border-bottom: 1px solid #d6d7d6;
+}
+table thead tr th:nth-of-type(2){
+	width: 302px;
+	height: 34px;
+	background: url(../img/mymusic/menubar.png);
+	border: 1px solid  #d6d7d6;
+}
+table thead tr th:nth-of-type(3){
+	width: 111px;
+	height: 34px;
+	background: url(../img/mymusic/menubar.png);
+	border: 1px solid  #d6d7d6;
+}
+table thead tr th:nth-of-type(4){
+	width: 104px;
+	height: 34px;
+	background: url(../img/mymusic/menubar.png);
+	border: 1px solid  #d6d7d6;
+}
+table thead tr th:nth-of-type(5){
+	width: 148px;
+	height: 34px;
+	background: url(../img/mymusic/menubar.png);
+	border-bottom: 1px solid #d6d7d6;
+}
+table thead tr th{
+	font-size: 12px;
+	font-weight: initial;
+	color: gray;
+}
+ 

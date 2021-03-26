@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="dist/css/swiper.min.css">
+		<style type="text/css">
+			/*user*/
+			#head {
+				width: 1519px;
+				height: 75px;
+			}
+			
+			#head #head-black {
+				position: relative;
+				width: 1519px;
+				height: 70px;
+				background: #242424;
+			}
+			
+			#head #head-red {
+				
+				width: 1519px;
+				height: 5px;
+				background: #c20c0c;
+			}
+			
+			#link-home {
+				display: block;
+				width: 177px;
+				height: 70px;
+				background: url(img/icon-wyy.PNG) no-repeat top center;
+				background-size: 100%;
+				float: left;
+				margin-left: 200px;
+			}
+			
+			.head-ul-li {
+				width: 94px;
+				height: 70px;
+				display: block;
+				list-style: none;
+				float: left;
+				text-align: center;
+			}
+			
+			.head-ul-li a {
+				display: block;
+				margin: 25px 10px 10px 10px;
+				color: white;
+				font-size: 14px;
+				text-decoration: none;
+			}
+			.head-ul-li:hover {
+				background: black;
+			}
+			
+			#a-hot {
+				position: absolute;
+				top: 10px;
+				right: 565px;
+				width: 25px;
+				/*background: url(img/HOT.png) no-repeat top -20px right;
+				background-size: 28px;*/
+			}						
+			.input-group{
+				position: relative;
+				width: 158px;
+				left: 20px;
+			}
+			.input-group-addon {
+				/*position: absolute;*/
+				height: 34px;
+				width: 30px;
+				background: url(img/sousuo.png) no-repeat top 3px center;
+				background-size: 20px;
+				border-top-left-radius: 50px;
+				border-bottom-left-radius: 50px;
+				background-color: white;
+				outline: none;
+				display: inline-block;
+				margin-top: 10px;
+				float: left;
+				margin-left: 10px;
+				
+			}
+			
+			.form-control {
+				position: absolute;
+				/*position: absolute;*/
+				right: -40px;
+				top: -44px;
+				float: left;
+				height: 34px;
+				width: 220px;
+				border: none;
+				border-top-right-radius: 50px;
+				border-bottom-right-radius: 50px;
+				outline: none;
+				display: inline-block;
+				margin-top: 10px;
+			}
+			
+			#authors{
+				position: absolute;
+				top: 12px;
+				right: 250px;
+				width: 90px;
+				height: 36px;
+				border-top-right-radius: 50px;
+				border-bottom-right-radius: 50px;
+				border-top-left-radius: 50px;
+				border-bottom-left-radius: 50px;
+				/*float: left;*/
+				background: none;
+				border: 1px solid gainsboro;
+				color: white;
+				font-size: 12px;
+				display: inline-block;
+				outline: none;
+			}
+			#authors:hover{
+				border: 2px solid white;
+			}
+			.clearfix{				
+				position: absolute;
+				right: 180px;
+				top: 12px;
+			}
+			#dropdownMenuDivider{
+				background: black;
+				border: 1px solid white;
+				border-top-right-radius: 50px;
+				border-bottom-right-radius: 50px;
+				border-top-left-radius: 50px;
+				border-bottom-left-radius: 50px;
+				color: white;
+				outline: none;
+			}
+			#dropdownMenuDivider:hover{
+				border: 2px solid white;
+			}
+			
+			/*footer*/
+			#footer{
+				
+			}
+			#footer .row{
+				width: 1535px;
+				height: 150px;	
+				background: #f2f2f2;
+				display: inline-block;			
+			}
+			#footer .row .col-md-8{
+				height: 150px;
+				
+			}
+			#footer .row .col-md-8 .col-md-8 ul li{
+				display: inline-block;				
+				margin-right: 10px;
+				margin-top: 20px;
+			}
+			#footer .row .col-md-8 .col-md-8 ul li a{
+				list-style: none;
+				color: gray;				
+			}
+			#footer .row .col-md-8 .col-md-8 p a{				
+				color: black;				
+			}
+			#footer-a1 {
+				display: block;
+				width: 70px;
+				height: 80px;
+				background: url(img/footer-a1.PNG) no-repeat top center;
+				background-size: 100%;
+				float: left;
+				margin: 30px 5px 20px 0px;
+			}
+			#footer-a2 {
+				display: block;
+				width: 70px;
+				height: 80px;
+				background: url(img/footer-a2.PNG) no-repeat top center;
+				background-size: 100%;
+				float: left;
+				margin: 30px 5px 20px 0px;
+			}
+			#footer-a3 {
+				display: block;
+				width: 70px;
+				height: 80px;
+				background: url(img/footer-a3.PNG) no-repeat top center;
+				background-size: 100%;
+				float: left;
+				margin: 30px 5px 20px 0px;
+			}
+			#footer-a4 {
+				display: block;
+				width: 70px;
+				height: 80px;
+				background: url(img/footer-a4.PNG) no-repeat top center;
+				background-size: 100%;
+				float: left;
+				margin: 30px 5px 20px 0px;
+			}
+			
+			.box1{
+				height: 800px;
+				width: 100%;
+				display: inline-block;
+				background: #161616;
+			}
+			.boxs{
+				height: 440px;
+				width: 100%;
+				display: inline-block;
+				background:#ffffff;
+			}
+			.bosx{
+				height: 440px;
+				width: 100%;
+				display: inline-block;
+				background: #f8f8f8;
+			}
+			.bod{
+				text-align: center;
+				color: #cbcbcb;
+			}
+			.boxa{
+				width: 55%;
+				display: inline-block;
+				
+			}
+			.boxa img{
+				height: 330px;
+				width: auto;
+				margin-top: 40px;
+				margin-left: 60px;
+			}
+			.boxa h3{
+				margin-top: 80px;
+				margin-left: 60px;
+			}
+			.boxa h5{
+				 margin-top: 20px;
+				margin-left: 80px;
+			}
+			.boxb{
+				width: 40%;
+				display: inline-block;
+			}
+			.boxb img{
+				height: 330px;
+				width: auto;
+				margin-top: 40px;
+				margin-right: 80px;
+			}
+			.boxb h3{
+				margin-top: 80px;
+				margin-right: 100px;
+			}
+			.boxb h5{
+		       margin-top: 20px;
+				margin-right: 90px;
+			}
+			.er{
+				border-radius: 5px;
+				padding: 10px;
+				position:fixed;
+				background-color: white;
+				left: 1420px;
+				top: 320px;
+				height:150px;
+				width: 120px;
+			}
+			.er img{
+				width: 100%;
+				height: auto;
+			}
+			.bod .box1 a{
+				position: absolute;
+				color: white;
+				margin-top: 40px;
+				left: 1300px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="head">
+			<div id="head-black">
+				<a href="index.html" id="link-home"></a>
+				<ul>
+					<li class="head-ul-li">
+						<a href="index.html">发现音乐</a>
+					</li>
+					<li class="head-ul-li">
+						<a href="myMusicUnlogged.html">我的音乐</a>
+					</li>
+					<li class="head-ul-li"">
+						<a href="friendUnloged.html">朋友</a>
+					</li>
+					<li class="head-ul-li">
+						<a href="musicStore.html" target="_blank">商城</a>
+					</li>
+					<li class="head-ul-li">
+						<a href="music man.html" target="_blank">音乐人</a>
+					</li>
+					<li class="head-ul-li"  style="background: black;>
+						<img id="a-hot" src="img/HOT.png"/ >
+						<a href="downLoad.html" target="_blank">下载客户端</a>
+					</li>
+				</ul>
+				<div class="input-sreach">
+					<div class="input-group">
+						<span class="input-group-addon" id="basic-addon1"></span>
+						<input type="text" class="form-control" placeholder="音乐/视频/电台/用户" aria-describedby="basic-addon1">
+					</div>
+					<button id="authors">创作者中心</button>
+					<div class="dropdown clearfix">
+						<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenuDivider" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+					        登陆
+					        <span class="caret"></span>
+					    </button>
+						<ul class="dropdown-menu" aria-labelledby="dropdownMenuDivider">
+							<li>
+								<a href="nothing.html">手机号登陆</a>
+							</li>
+							<li role="separator" class="divider"></li>
+							<li>
+								<a href="nothing.html">微信登陆</a>
+							</li>
+							<li role="separator" class="divider"></li>
+							<li>
+								<a href="#">QQ登陆</a>
+							</li>
+							<li role="separator" class="divider"></li>
+							<li>
+								<a href="#">新浪微博登陆</a>
+							</li>
+							<li role="separator" class="divider"></li>
+							<li>
+								<a href="#">网易邮箱账号登陆</a>
+							</li>
+						</ul>
+					</div>
+
+				</div>
+
+			</div>
+			<div id="head-red">				
+			</div>
+		</div>
+		
+		<div class="er">
+			<img src="img/er.png" />
+			<h6>&nbsp;&nbsp;扫描二维码下载</h6>
+		</div>
+		<div class="bod">
+     	<div class="box1">
+			<a href="nothing.html" >↓ 下载全部客户端</a>
+			<div class="boxa">
+				<h3>在电脑上听</h3>
+				<img src="img/m2.png" />
+				<br />
+				<h5>macOS&nbsp;&nbsp;Windows</h5>
+				<input type="button" class="but1" value="下载电脑端" style="color: red; width: 300px; height: 65px; background: white; border-radius: 32.5px; font-size: 22px; margin-left: 80px ; margin-top: 20px;" />
+			</div>
+			<div class="boxb">
+				<h3>在手机上听</h3>
+				<img src="img/m1.png" />
+				<br />
+				<h5>macOS&nbsp;&nbsp;Windows</h5>
+				<input type="button" class="but2" value="下载手机端" style="color: red; width: 300px; height: 65px; background: white; border-radius: 32.5px; font-size: 22px; margin-right: 95px ; margin-top: 20px;" />
+			</div>
+		</div>
+		<div class="boxs">
+			<img src="img/f1.png">
+			<img src="img/00001.jpg">
+		</div>
+		<div class="bosx">
+			<img src="img/00002.jpg">
+			<img src="img/f2.png">
+		</div>
+		<div class="boxs">
+			<img src="img/f3.png">
+			<img src="img/00003.jpg">
+			
+		</div>
+		<div class="bosx">
+			<img src="img/00004.jpg">
+			<img src="img/f4.png">
+		</div>
+		<div class="boxs">
+			<img src="img/f5.png">
+			<img src="img/00005.jpg">
+			
+		</div>
+		</div>
+		<div id="footer">
+        	<div class="row">
+			    <div class="col-md-2"></div>
+			    <div class="col-md-8">
+			    	<div class="col-md-8">
+			    		<ul>
+			    			<li><a href="#">服务条款</a></li>|
+			    			<li><a href="#">隐私政策</a></li>|
+			    			<li><a href="#">版权投诉指引</a></li>|
+			    			<li><a href="#">意见反馈</a></li>
+			    		</ul>
+			    		<p>网易公司版权所有©1997-2019&nbsp;&nbsp;杭州乐读科技有限公司运营：<a>浙网文[2018]3506-263号</a></p>			    		
+			    		<p>违法和不良信息举报电话：&nbsp;&nbsp;0571-89853516 举报邮箱：<a>ncm5990@163.com</a></p>			    		
+			    	</div>
+			    	<div class="col-md-4">
+			    		<a href="#" id="footer-a1"></a>
+			    		<a href="music man.html" target="_blank" id="footer-a2"></a>
+			    		<a href="#" id="footer-a3"></a>
+			    		<a href="#" id="footer-a4"></a>			    		
+			    	</div>
+			    </div>
+			    <div class="col-md-2"></div>
+			</div>
+	</body>
+</html>

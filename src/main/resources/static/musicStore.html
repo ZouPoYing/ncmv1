@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+		<style type="text/css">
+			/*footer*/
+									
+			#footer .row {
+				width: 1535px;
+				height: 150px;
+				background: #f2f2f2;
+				display: inline-block;
+			}
+			
+			#footer .row .col-md-8 {
+				height: 150px;
+			}
+			
+			#footer .row .col-md-8 .col-md-8 ul li {
+				display: inline-block;
+				margin-right: 10px;
+				margin-top: 20px;
+				text-align: center;
+			}
+			
+			#footer .row .col-md-8 .col-md-8 ul li a {
+				list-style: none;
+				color: gray;
+			}
+			
+			#footer .row .col-md-8 .col-md-8 p a {
+				color: black;
+			}
+			
+			#footer-a1 {
+				display: block;
+				width: 70px;
+				height: 80px;
+				background: url(img/footer-a1.PNG) no-repeat top center;
+				background-size: 100%;
+				float: left;
+				margin: 30px 5px 20px 0px;
+			}
+			
+			#footer-a2 {
+				display: block;
+				width: 70px;
+				height: 80px;
+				background: url(img/footer-a2.PNG) no-repeat top center;
+				background-size: 100%;
+				float: left;
+				margin: 30px 5px 20px 0px;
+			}
+			
+			#footer-a3 {
+				display: block;
+				width: 70px;
+				height: 80px;
+				background: url(img/footer-a3.PNG) no-repeat top center;
+				background-size: 100%;
+				float: left;
+				margin: 30px 5px 20px 0px;
+			}
+			
+			#footer-a4 {
+				display: block;
+				width: 70px;
+				height: 80px;
+				background: url(img/footer-a4.PNG) no-repeat top center;
+				background-size: 100%;
+				float: left;
+				margin: 30px 5px 20px 0px;
+			}
+			html {
+				overflow-y: scroll;
+				overflow-x: hidden;
+			}
+			.toTop{
+				display: none;
+				position: fixed;
+				right: 120px;
+				bottom:180px;
+				width: 70px;
+				height: 300px;
+				border-radius: 5px;
+				border:1px solid gray;
+				text-align: center;
+				line-height: 50px;
+				background: #fff;
+				overflow: hidden;
+			}
+			.top1{
+				color: gray;
+				height: 210px;
+				width: 100%;
+				margin: 0;
+				padding: 0;
+			
+			}
+			.top2{
+				background: black;
+				color: white;
+				height: 90px;
+				width: 100%;
+				
+			}
+			.input-group {
+				width: 270px;
+				margin: 20px;
+				float: right;
+			}
+			
+			.col-sm-3 {
+				float: right;
+			}
+			
+			.bottom-img1 {
+				width: 270px;
+				height: 80px;
+				display: inline-block;
+			}
+			
+			.bottom-img2 {
+				width: 270px;
+				height: 80px;
+				display: inline-block;
+			}
+			
+			.bottom-img3 {
+				width: 270px;
+				height: 80px;
+				display: inline-block;
+			}
+			
+			.bottom-img4 {
+				width: 270px;
+				height: 80px;
+				display: inline-block;
+			}
+			
+			.slide {
+				margin: 0 auto;
+			}
+			
+			.carousel-inner {
+				background: black;
+				margin: 0 auto;
+			}
+			
+			.carousel-caption {
+				margin: 0 auto;
+			}
+			
+			.nav-pills {
+				text-align: center;
+				display: inline-block;
+				margin: 0 auto;
+			}
+			
+			.header {
+				margin: 0 auto;
+			}
+			
+			.top {
+				margin: 0 auto;
+			}
+			
+			.pone {
+				display: inline-block;
+			}
+			
+			.bottom {
+				margin: 0 auto;
+			}
+			
+			.input-group {
+				border: 2px solid gray;
+				height: 40px;
+				border-radius: 20px;
+				overflow: hidden;
+			}
+			
+			.form-group {
+				border-radius: 18px;
+				overflow: hidden;
+				border-color: #262626;
+				border: 2px;
+				margin: 27px;
+				left: 900px;
+				position: absolute;
+			}
+			
+			.form-control {
+				border: white;
+			}
+			
+			.btn-default {
+				border: white;
+			}
+			
+			.banner .carousel .item {
+				text-align: center;
+			}
+			
+			.banner .carousel .item>img {
+				display: inline-block;
+			}
+			
+			.header_bottom {
+				text-align: center;
+			}
+			
+			/* .header_bottom li {} */
+			
+			.navbar {
+				background-color: white;
+				height: 100px;
+			}
+			
+			.container-fluid {
+				display: inline-block;
+				width: 1200px;
+			}
+			
+			.navbar {
+				text-align: center;
+			}
+			
+			.navbar-right {
+				position: relative;
+				top: 30px;
+			}
+			
+			.imimimg {
+				top: 25px;
+				left: 200px;
+				position: relative;
+			}
+			
+			.row {
+				text-align: center;
+			}
+			
+			.col-md-4 {
+				text-align: center;
+			}
+			
+			.thumbnail {
+				display: inline-block;
+				text-align: center;
+			}
+			.rowmini .thumbnail a img{
+				width: 262px;
+				height: 262px;
+			}
+			.rowmini .thumbnail{
+				width: 270px;
+				height: 400px;
+				
+			}
+		 .header_bottom .img2001 img{
+		 	width: 1100px;
+		 	height: auto;
+		 	display: inline-block;
+		 }
+		 .header_bottom h1{
+		 	left: 190px;
+		 	position: relative;
+		 	width: 300px;
+		 }
+		</style>
+	</head>
+
+	<body>
+		<script type="text/javascript" src="js/jquery-2.1.0.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript">
+			$(function(){
+
+			
+	
+
+				$(window).scroll(function(){
+
+					if($(window).scrollTop()>200){
+						$(".toTop").fadeIn();
+					}else{
+						$(".toTop").fadeOut();
+					}
+				
+				})
+				$(".toTop").click(function(){
+	//				$(window).scrollTop(0);  可以回到页面顶部 但是没有过程
+					$('html,body').animate({'scrollTop':'0px'},1000);
+				})
+
+			})
+		</script>
+		<!--<div class="header">
+			<div class="header_top">
+				<div class="top">
+					 
+					<div class="row">
+                 <div class="pone">
+                  	<a href="#"><img src="img/010.png" /></a>
+                  </div>
+						<div class="col-sm-3">
+							<div class="input-group">
+								<span class="input-group-btn">
+                                     <button class="btn btn-default" type="button">搜索</button>
+                                 </span>
+								<input type="text" class="form-control" placeholder="Search for...">
+								
+
+							</div>
+						
+						</div>
+						
+					</div>
+					
+
+				</div>
+			</div>
+
+			-->
+			<div class="toTop">
+			<div class="top1">
+				查看营业执照<hr />
+				100%正品<hr />
+			
+				
+			</div>
+			<div class="top2">^<br/>TOP</div>
+		</div>
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+					<a class="navbar-brand" href="#"><img src="img/010.png"></a>
+				</div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+					<form class="navbar-form navbar-left">
+						<div class="form-group">
+							<button type="submit" class="btn btn-default">搜索</button>
+							<input type="text" class="form-control" placeholder="Search">
+
+						</div>
+
+					</form>
+					<a href="#" class="imimimg"><img src="img/0102.png" /></a>
+					<ul class="nav navbar-nav navbar-right">
+
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">登录<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li>
+									<a href="#">QQ登录</a>
+								</li>
+								<li>
+									<a href="#">微信登录</a>
+								</li>
+								<li>
+									<a href="#">微博登录</a>
+								</li>
+
+								<li role="separator" class="divider"></li>
+								<li>
+									<a href="#">网易云登录</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<!-- /.navbar-collapse -->
+			</div>
+			<!-- /.container-fluid -->
+		</nav>
+		
+		<div class="banner">
+			<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+				<!-- Indicators -->
+				<ol class="carousel-indicators">
+					<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+					<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+					<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+					<li data-target="#carousel-example-generic" data-slide-to="3"></li>
+					<li data-target="#carousel-example-generic" data-slide-to="4"></li>
+					<li data-target="#carousel-example-generic" data-slide-to="5"></li>
+				</ol>
+
+				<!-- Wrapper for slides -->
+				<div class="carousel-inner" role="listbox">
+					<div class="item active">
+						<img src="img/0001.png" alt="">
+
+					</div>
+					<div class="item">
+						<img src="img/0002.png">
+
+					</div>
+					<div class="item">
+						<img src="img/0003.png">
+
+					</div>
+					<div class="item">
+						<img src="img/0004.png">
+
+					</div>
+					<div class="item">
+						<img src="img/0005.png">
+
+					</div>
+					<div class="item">
+						<img src="img/0006.png">
+
+					</div>
+
+				</div>
+				<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+					<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+					<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+				</a>
+			</div>
+		</div>
+		<div class="header_bottom">
+
+			<ul class="nav nav-pills" contenteditable="">
+				<li role="presentation" class="nave">
+					<a href="#"><img src="img/a1.png" class="bottom-img1"></a>
+				</li>
+				<li role="presentation" class="nave">
+					<a href="#"><img src="img/a2.png" class="bottom-img2"></a>
+				</li>
+				<li role="presentation" class="nave">
+					<a href="#"><img src="img/a3.png" class="bottom-img3"></a>
+				</li>
+				<li role="presentation" class="nave">
+					<a href="#"><img src="img/a4.png" class="bottom-img4"></a>
+				</li>
+
+			</ul>
+			<div class="row">
+
+				<div class="thumbnail">
+					<a href="#"><img src="img/0111.png" alt="..."></a>
+
+				</div>
+				<div class="thumbnail">
+					<a href="#"><img src="img/0112.png" alt="..."></a>
+
+				</div>
+
+			</div>
+			<h1><b>编辑推荐</b></h1>
+			<div class="row  rowmini">
+				
+				
+					<div class="thumbnail">
+						<a href="#"><img src="img/0121.png" alt="..."></a>
+						<div class="caption">
+							<h3>¥229</h3>
+						
+							<p>
+								
+								<a href="#" class="btn btn-default" > 伯朗H16 Pro 开盖弹窗智能触控苹果安<br/>卓通用蓝牙5.0</a>
+							</p>
+						</div>
+					</div>
+					<div class="thumbnail">
+						<a href="#"><img src="img/1122.png" alt="..."></a>
+						<div class="caption">
+							<h3>¥68</h3>
+			
+							<p>
+								
+								<a href="#" class="btn btn-default" >feifan24孔复音口琴C调专业演奏<br />级高级儿童初学者学生用入门教材
+</a>
+							</p>
+						</div>
+					</div>
+					<div class="thumbnail">
+						<a href="#"><img src="img/1123.png"  alt="..."></a>
+						<div class="caption">
+							<h3>¥59</h3>
+		
+							<p>
+								
+								<a href="#" class="btn btn-default" >网易云音乐不锈钢<br />保温杯</a>
+							</p>
+						</div>
+					</div>
+					<div class="thumbnail">
+						<a href="#"><img src="img/1124.png"  alt="..."></a>
+						<div class="caption">
+							<h3>¥298</h3>
+
+							<p>
+								
+								<a href="#" class="btn btn-default" >网易云音乐联名款真无线蓝牙耳机<br />TWS1</a>
+							</p>
+						</div>
+					</div>
+			
+			</div>
+			<div class="row  rowmini">
+				
+				
+					<div class="thumbnail">
+						<a href="#"><img src="img/1115.png" alt="..."></a>
+						<div class="caption">
+							<h3>¥22</h3>
+						
+							<p>
+								
+								<a href="#" class="btn btn-default" >  网易云音乐经典红系列黑胶裸背硬面<br/>笔记本</a>
+							</p>
+						</div>
+					</div>
+					<div class="thumbnail">
+						<a href="#"><img src="img/1116.png" alt="..."></a>
+						<div class="caption">
+							<h3>¥299</h3>
+			
+							<p>
+								
+								<a href="#" class="btn btn-default" > 网易云音乐定制款真无线耳机-音乐<br />π</a>
+							</p>
+						</div>
+					</div>
+					<div class="thumbnail">
+						<a href="#"><img src="img/1117.png"  alt="..."></a>
+						<div class="caption">
+							<h3>¥89</h3>
+		
+							<p>
+								
+								<a href="#" class="btn btn-default" > 伯朗 i9S真无线蓝牙耳机V5.0双耳通<br />话苹果安卓通用</a>
+							</p>
+						</div>
+					</div>
+					<div class="thumbnail">
+						<a href="#"><img src="img/1118.png"  alt="..."></a>
+						<div class="caption">
+							<h3>¥56</h3>
+
+							<p>
+								
+								<a href="#" class="btn btn-default" >网易云音乐 <br />运动斜挎包</a>
+							</p>
+						</div>
+					</div>
+			
+			</div>
+			<div class="img2001">
+						<a href="#" ><img src="img/2001.png"  ></a>
+			</div>
+			<h1><b>热门商品</b></h1>
+			<div class="row  rowmini">
+				
+				
+					<div class="thumbnail">
+						<a href="#"><img src="img/3019.png" alt="..."></a>
+						<div class="caption">
+							<h3>¥49</h3>
+						
+							<p>
+								
+								<a href="#" class="btn btn-default" > 华为/荣耀honor AM115 高保真 原<br/>装半入耳式 带麦可通话 手机通用有线耳机</a>
+							</p>
+						</div>
+					</div>
+					<div class="thumbnail">
+						<a href="#"><img src="img/3002.png" alt="..."></a>
+						<div class="caption">
+							<h3>¥119</h3>
+			
+							<p>
+								
+								<a href="#" class="btn btn-default" >网易云音乐与本来设计 原木创意手<br />机支架手机座扩音器</a>
+</a>
+							</p>
+						</div>
+					</div>
+					<div class="thumbnail">
+						<a href="#"><img src="img/3003.png"  alt="..."></a>
+						<div class="caption">
+							<h3>¥149</h3>
+		
+							<p>
+								
+								<a href="#" class="btn btn-default" >击音【触控级】降噪防水手势<br />识别蓝牙运动耳机</a>
+							</p>
+						</div>
+					</div>
+					<div class="thumbnail">
+						<a href="#"><img src="img/3004.png"  alt="..."></a>
+						<div class="caption">
+							<h3>¥59</h3>
+
+							<p>
+								
+								<a href="#" class="btn btn-default" >本来设计 原创木质冰箱磁贴<br /> 创意礼品生日礼物
+</a>
+							</p>
+						</div>
+					</div>
+			
+			</div>
+			<div class="row  rowmini">
+				
+				
+					<div class="thumbnail">
+						<a href="#"><img src="img/3005.png" alt="..."></a>
+						<div class="caption">
+							<h3>¥199</h3>
+						
+							<p>
+								
+								<a href="#" class="btn btn-default" > 网易云音乐定制款W800X头戴<br/>式蓝牙耳机</a>
+							</p>
+						</div>
+					</div>
+					<div class="thumbnail">
+						<a href="#"><img src="img/3006.png" alt="..."></a>
+						<div class="caption">
+							<h3>¥138</h3>
+			
+							<p>
+								
+								<a href="#" class="btn btn-default" >JBL C200SI立体声入耳式耳机 手机音乐耳<br />机 运动游戏耳机 耳机耳麦 可通话</a>
+							</p>
+						</div>
+					</div>
+					<div class="thumbnail">
+						<a href="#"><img src="img/3007.png"  alt="..."></a>
+						<div class="caption">
+							<h3>¥399</h3>
+		
+							<p>
+								
+								<a href="#" class="btn btn-default" >  网易云音乐氧气蓝牙耳机Pro<br />版</a>
+							</p>
+						</div>
+					</div>
+					<div class="thumbnail">
+						<a href="#"><img src="img/3008.png"  alt="..."></a>
+						<div class="caption">
+							<h3>¥299</h3>
+
+							<p>
+								
+								<a href="#" class="btn btn-default" >漫步者W2 真无线 入耳式立 <br />体声蓝牙耳机 蓝牙5 左右可独立使用</a>
+							</p>
+						</div>
+					</div>
+			
+			</div>
+	
+			<div class="row  rowmini">
+				
+				
+					<div class="thumbnail">
+						<a href="#"><img src="img/3009.png" alt="..."></a>
+						<div class="caption">
+							<h3>¥299</h3>
+						
+							<p>
+								
+								<a href="#" class="btn btn-default" >网易云音乐氧气蓝牙耳机<br/>青春版</a>
+							</p>
+						</div>
+					</div>
+					<div class="thumbnail">
+						<a href="#"><img src="img/3010.png" alt="..."></a>
+						<div class="caption">
+							<h3>¥69</h3>
+			
+							<p>
+								
+								<a href="#" class="btn btn-default" >漫步者（EDIFIER） H230P 入<br />耳式立体声线控耳机</a>
+</a>
+							</p>
+						</div>
+					</div>
+					<div class="thumbnail">
+						<a href="#"><img src="img/3011.png"  alt="..."></a>
+						<div class="caption">
+							<h3>¥399</h3>
+		
+							<p>
+								
+								<a href="#" class="btn btn-default" >云音乐联名款JBL W30BT<br />蓝牙耳机</a>
+							</p>
+						</div>
+					</div>
+					<div class="thumbnail">
+						<a href="#"><img src="img/3012.png"  alt="..."></a>
+						<div class="caption">
+							<h3>¥29</h3>
+
+							<p>
+								
+								<a href="#" class="btn btn-default" >弯头数据线快充2.4A苹果安卓Type-<br />C 玩游戏充电线</a>
+							</p>
+						</div>
+					</div>
+			
+			</div>
+			<div class="row  rowmini">
+				
+				
+					<div class="thumbnail">
+						<a href="#"><img src="img/3013.png" alt="..."></a>
+						<div class="caption">
+							<h3>¥69</h3>
+						
+							<p>
+								
+								<a href="#" class="btn btn-default" >击音听键A1 蓝牙音频接收器 4+种<br/>佩戴 苹果安卓必备新配件</a>
+							</p>
+						</div>
+					</div>
+					<div class="thumbnail">
+						<a href="#"><img src="img/3014.png" alt="..."></a>
+						<div class="caption">
+							<h3>¥118</h3>
+			
+							<p>
+								
+								<a href="#" class="btn btn-default" >JBL T120A 立体声入耳式耳机 <br />手机音乐耳机 游戏耳机 耳机耳麦 带麦可..</a>
+							</p>
+						</div>
+					</div>
+					<div class="thumbnail">
+						<a href="#"><img src="img/3015.png"  alt="..."></a>
+						<div class="caption">
+							<h3>¥799</h3>
+		
+							<p>
+								
+								<a href="#" class="btn btn-default" >Beats X 蓝牙无线 入耳式运动耳机 <br />带麦可通话</a>
+							</p>
+						</div>
+					</div>
+					<div class="thumbnail">
+						<a href="#"><img src="img/3016.png"  alt="..."></a>
+						<div class="caption">
+							<h3>¥179</h3>
+
+							<p>
+								
+								<a href="#" class="btn btn-default" >本来设计 原木质音乐盒八音盒 <br /> (黑胶VIP ¥169)</a>
+							</p>
+						</div>
+					</div>
+			
+			</div>
+			<div id="footer">
+			<div class="row">
+				<div class="col-md-2"></div>
+				<div class="col-md-8">
+					<div class="col-md-8">
+						<ul>
+							<li>
+								<a href="nothing.html">服务条款</a>
+							</li>|
+							<li>
+								<a href="nothing.html">隐私政策</a>
+							</li>|
+							<li>
+								<a href="nothing.html">版权投诉指引</a>
+							</li>|
+							<li>
+								<a href="nothing.html">意见反馈</a>
+							</li>
+						</ul>
+						<p>网易公司版权所有©1997-2019&nbsp;&nbsp;杭州乐读科技有限公司运营：
+							<a href="nothing.html">浙网文[2018]3506-263号</a>
+						</p>
+						<p>违法和不良信息举报电话：&nbsp;&nbsp;0571-89853516 举报邮箱：
+							<a href="nothing.html">ncm5990@163.com</a>
+						</p>
+					</div>
+					<div class="col-md-4">
+						<a href="nothing.html" id="footer-a1"></a>
+						<a href="music man.html" target="_blank" id="footer-a2"></a>
+						<a href="nothing.html" id="footer-a3"></a>
+						<a href="nothing.html" id="footer-a4"></a>
+					</div>
+				</div>
+				<div class="col-md-2"></div>
+			</div>
+		</div>
+		</div>
+		
+	</body>
+
+</html>

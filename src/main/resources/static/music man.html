@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="dist/css/swiper.min.css">
+		<style type="text/css">
+			html,
+			body {
+				position: relative;
+				height: 100%;
+			}
+			
+			body {
+				background: #eee;
+				font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+				font-size: 14px;
+				color: #000;
+				margin: 0;
+				padding: 0;
+			}
+			
+			.swiper-container {
+				width: 100%;
+				height: 100%;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			
+			.swiper-slide {
+				text-align: center;
+				font-size: 18px;
+				background: #fff;
+				/* Center slide text vertically */
+				display: -webkit-box;
+				display: -ms-flexbox;
+				display: -webkit-flex;
+				display: flex;
+				-webkit-box-pack: center;
+				-ms-flex-pack: center;
+				-webkit-justify-content: center;
+				justify-content: center;
+				-webkit-box-align: center;
+				-ms-flex-align: center;
+				-webkit-align-items: center;
+				align-items: center;
+			}
+			
+			.container-fluid {
+				width: 1300px;
+				height: 40px;
+			}
+			
+			.navbar .container-fluid li {
+				margin-left: 50px;
+				font-size: 20px;
+				float: left;
+			}
+			
+			.navbar .container-fluid li h6 {
+				color: white;
+			}
+			
+			.navbar .container-fluid .hong {
+				display: inline-block;
+				float: left;
+				left: 50px;
+			}
+			
+			.navbar .container-fluid .hui {
+				font-size: 10px;
+				color: gray;
+			}
+			
+			.navbar-brand {
+				float: left;
+			}
+			
+			.navbar {
+				background: rgba(32, 32, 32, 1);
+				position: fixed;
+				width: 100%;
+				border-radius: 0%;
+				height: 60px;
+			}
+			
+			.jumbotron {
+				height: 830px;
+				background: #202020;
+				text-align: center;
+			}
+			
+			.btn-lg {
+				background: #202020;
+				color: #ea524e;
+				border: 2px solid #ea524e;
+				border-radius: 0%;
+				height: 60px;
+				width: 180px;
+				padding-top: 18px;
+				margin-top: -400px;
+				font-size: 20px;
+			}
+			
+			.small01 {
+				margin-top: -180px;
+				color: #ea524e;
+			}
+			
+			.jumbotron a {
+				text-decoration: none;
+			}
+			
+			.main {
+				position: fixed;
+				left: 1540px;
+				top: 300px;
+			}
+			/*.item {
+				border: 5px solid #ea524e;
+				height: 8px;
+				width: 8px;
+				margin: 10px;
+				border-radius: 5px;
+			}
+			*/
+			
+			.box2 {
+				height: 770px;
+				width: 1600px;
+				display: block;
+				margin-top: 30px;
+			}
+			
+			.box2 img {
+				height: 770px;
+				width: 100%;
+			}
+			
+			nav {
+				position: fixed;
+				z-index: 3;
+			}
+			
+			.swiper-slide {
+				width: 100%;
+			}
+			
+			.swiper-container .swiper-wrapper .swiper-slide .jumbotron {
+				width: 100%;
+			}
+			
+			.swiper-container .swiper-wrapper .swiper-slide .box3 {
+				width: 100%;
+				background: #2c2c2c;
+				height: 100%;
+				position: relative;
+			}
+			
+			.swiper-container .swiper-wrapper .swiper-slide .box3 img {
+				margin-top: 60px;
+			}
+			
+			.banner .carousel .item {
+				text-align: center;
+				height: 100%;
+				width: auto;
+			}
+			
+			.banner .carousel .item>img {
+				display: inline-block;
+				height: 100%;
+				width: auto;
+			}
+			
+			.banner .carousel {
+				width: 600px;
+			}
+			
+			.banner {
+				text-align: center;
+			}
+			
+			.banner .carousel {
+				display: inline-block;
+			}
+			
+			.box4 {
+				position: relative;
+			}
+			
+			.box4 img {
+				left: -10px;
+				position: relative;
+			}
+			
+			.box2 {
+				position: relative;
+			}
+			
+			.box2 img {
+				left: -10px;
+				position: relative;
+			}
+			
+			.box3 .boxx {
+				left: -10px;
+				position: relative;
+			}
+			
+			.box3 .banner {
+				position: relative;
+			}
+			
+			.box5 {
+				width: 100%;
+				background: #282828;
+				height: 100%;
+				display: inline-block;
+			}
+			
+			.box5 p {
+				top: 217px;
+				position: relative;
+			}
+			
+			.box5 img {
+				margin-top: 60px;
+			}
+			
+			.box5 p .btn-lg {
+				background: #282828;
+				color: #ea524e;
+				border: 2px solid #ea524e;
+				border-radius: 0%;
+				height: 60px;
+				width: 240px;
+				padding-top: 18px;
+				font-size: 20px;
+			}
+			
+			.box6 {
+				width: 100%;
+				background: #f9f9f9;
+				height: 100%;
+				display: inline-block;
+			}
+			
+			.box6 img {
+				width: 100%;
+				height: auto;
+				margin-top: 50px;
+			}
+			
+			.box7 {
+				width: 100%;
+				background: #0d0d0d;
+				height: 100%;
+				position: relative;
+			}
+			
+			960 .box7 img {
+				height: auto;
+				z-index: 1;
+				width: 100%;
+			}
+			
+			.mohu {
+				background: rgba(37, 37, 37, 0.75);
+				z-index: 2;
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				top: 0px;
+			}
+			
+			.mohu ul li {
+				height: 160px;
+				width: 160px;
+				display: inline-block;
+				float: left;
+				margin-left: 45px;
+				left: 150px;
+				position: relative;
+			}
+			/*.mohu span{
+				height: 3px;
+				width: 20px;
+				border-color: red ;
+			}*/
+			.pic{
+				position: relative;
+			}
+			.mask{
+				position: absolute;
+				top: 0;
+				background: rgba(37, 37, 37, 0.75);
+				z-index: 2;
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				
+				 opacity: 0;
+            }
+			.mask:hover {
+                  opacity: 1;
+                  color: red;
+               }
+		</style>
+
+	</head>
+
+	<body>
+		<script type="text/javascript" src="js/jquery-2.1.0.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+		<nav class="navbar navbar-inverse">
+			<div class="container-fluid">
+				<!-- Brand and toggle get grouped for better mobile display -->
+
+				<a class="navbar-brand" href="#"><img src="img/m001.png" </a>
+
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+						<ul class="nav navbar-nav">
+
+							<li>
+								<a href="#">首页<span><hr/></span></a>
+							</li>
+							<li>
+								<a href="#">石头计划</a>
+							</li>
+							<li>
+								<a href="#">个人中心</a>
+							</li>
+							<li>
+								<a href="#">常见问题</a>
+							</li>
+							<li class="hong"><img src="img/m002.png"></li>
+							<li>&nbsp;</li>
+							<li class="hui"> 您还未登录，请先
+								<h6>登陆</h6></li>
+						</ul>
+
+					</div>
+					<!-- /.navbar-collapse -->
+			</div>
+			<!-- /.container-fluid -->
+		</nav>
+
+		<div class="swiper-container">
+
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<div class="jumbotron">
+						<img src="img/m101.jpg" />
+						<p>
+							<a class="btn btn-primary btn-lg" href="#" role="button">现在加入</a>
+						</p>
+						<a href="#">
+							<h6 class="small01">I'm Not Chinese Artist ></h6></a>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="box2">
+						<img src="img/b002.png" />
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="box3">
+						<img class="boxx" src="img/b003.png" />
+						<div class="banner">
+							<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+								<!-- Indicators -->
+								<ol class="carousel-indicators">
+									<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+									<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+									<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+									<li data-target="#carousel-example-generic" data-slide-to="3"></li>
+									<li data-target="#carousel-example-generic" data-slide-to="4"></li>
+
+								</ol>
+
+								<!-- Wrapper for slides -->
+								<div class="carousel-inner" role="listbox">
+									<div class="item active">
+										<img src="img/01.jpg" alt="">
+
+									</div>
+									<div class="item">
+										<img src="img/03.jpg">
+
+									</div>
+									<div class="item">
+										<img src="img/05.jpg">
+
+									</div>
+									<div class="item">
+										<img src="img/06.jpg">
+
+									</div>
+									<div class="item">
+										<img src="img/07.jpg">
+
+									</div>
+
+								</div>
+								<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+									<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+									<span class="sr-only">Previous</span>
+								</a>
+								<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+									<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+									<span class="sr-only">Next</span>
+								</a>
+
+							</div>
+						</div>
+						<h6 style="color: #ccc2b8;">从线上的专属主页、原创榜单、歌曲推荐，到线下的Live巡演，专辑制作、资金支持，<br />
+我们倾尽全力为有实力的原创音乐人提供一系列推广扶持计划，只希望您可以更专注于做好音乐。</h6>
+					</div>
+
+				</div>
+				<div class="swiper-slide">
+					<div class="box4">
+						<img src="img/b004.png" />
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="box5">
+						<img src="img/b05.png" />
+						<p>
+							<a class="btn btn-primary btn-lg" href="#">查看指数对应的权益></a>
+						</p>
+					</div>
+
+				</div>
+				<div class="swiper-slide">
+					<div class="box6">
+						<img src="img/b6.png" />
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="box7">
+						<img src="img/b7.jpg" style="width: 100%;height: auto;" />
+						<div class="mohu">
+							<h2 style="color: white; margin-top: 100px;">我们在这里等您</h2>
+							<hr style="width: 120px;" />
+							<h3 style="color:#c6ccc6 ;">入驻音乐人20000+ 上传作品数400000+</h3>
+							<ul class="f-cb">
+								<li>
+									<a href="/artist?id=1198010" target="_blank">
+										<div class="pic">
+											<img src="http://p1.music.126.net/sPWI-9J7wwhEiBPZVXnPBQ==/109951162853435698.jpg?param=160y184" alt="">
+											<div class="mask">
+												<p>粉丝：50万<br>作品：51首</p>
+											</div>
+										</div>
+										<h3 class="rts">暗杠</h3>
+									</a>
+								</li>
+								<li>
+									<a href="/artist?id=1193188" target="_blank">
+										<div class="pic">
+											<img src="http://p1.music.126.net/XrFtOX6N_On2nTK84BUrJA==/109951163781763572.jpg?param=160y184" alt="">
+											<div class="mask">
+												<p>粉丝：33万<br>作品：131首</p>
+											</div>
+										</div>
+										<h3 class="rts">Ayasa绚沙</h3>
+									</a>
+								</li>
+								<li>
+									<a href="/artist?id=4171" target="_blank">
+										<div class="pic">
+											<img src="http://p1.music.126.net/26NXODbFDr8O57hn35aTPQ==/1393081241592696.jpg?param=160y184" alt="">
+											<div class="mask">
+												<p>粉丝：24万<br>作品：14首</p>
+											</div>
+										</div>
+										<h3 class="rts">刘昊霖</h3>
+									</a>
+								</li>
+								<li>
+									<a href="/artist?id=12419710" target="_blank">
+										<div class="pic">
+											<img src="http://p1.music.126.net/QKoTQpyhil9UL18cEHxw2Q==/109951163251718016.jpg?param=160y184" alt="">
+											<div class="mask">
+												<p>粉丝：20万<br>作品：88首</p>
+											</div>
+										</div>
+										<h3 class="rts">曲肖冰</h3>
+									</a>
+								</li>
+								<li>
+									<a href="/artist?id=12174521" target="_blank">
+										<div class="pic">
+											<img src="http://p1.music.126.net/9AxOvJQqBkMY0pHC9VbPCw==/109951162809089968.jpg?param=160y184" alt="">
+											<div class="mask">
+												<p>粉丝：87万<br>作品：174首</p>
+											</div>
+										</div>
+										<h3 class="rts">音阙诗听</h3>
+									</a>
+								</li>
+								<li>
+									<a href="/artist?id=9255" target="_blank">
+										<div class="pic">
+											<img src="http://p1.music.126.net/GL0xcgu4OUml509BbW2qAQ==/109951163137467389.jpg?param=160y184" alt="">
+											<div class="mask">
+												<p>粉丝：92万<br>作品：152首</p>
+											</div>
+										</div>
+										<h3 class="rts">任然</h3>
+									</a>
+								</li>
+							</ul>
+							<br />
+							<p>
+								<a class="btn btn-primary btn-lg" href="#" role="button" style="z-index: 3; margin-top:220px ;position: relative;right: 630px; ">现在加入</a>
+							</p>
+
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<!-- Add Pagination -->
+			<div class="swiper-pagination"></div>
+		</div>
+		<script src="dist/js/swiper.min.js"></script>
+		<script>
+			var swiper = new Swiper('.swiper-container', {
+				direction: 'vertical',
+				slidesPerView: 1,
+				spaceBetween: 30,
+				mousewheel: true,
+				pagination: {
+					el: '.swiper-pagination',
+					clickable: true,
+				},
+			});
+		</script>
+		<!--<div class="main">
+	<div class="item"></div>
+	<div class="item"></div>
+	<div class="item"></div>
+	<div class="item"></div>
+	<div class="item"></div>
+	<div class="item"></div>
+</div>-->
+		<!--<script type="text/javascript" src="js/jquery.mousewheel.js" ></script>-->
+		<!--<script type="text/javascript">
+	$(function(){
+		var num=0;
+		$(".rnav li").click(function(){
+			console.log("li");
+			var n=$(this).index();
+			$(".main").stop().animate({"top":n*100+'%'},1500);
+			$(this).addClass("avtive").siblings().removeClass("active");
+			num = n;
+		})
+		$(document).mousewheel(function(e,d){
+			console.log(d);
+			if(num>6){
+				num=6;
+			}
+			if(num<0){
+				num=0;
+				
+			}
+			$(".main").stop().animate({"top":-MSInputMethodContext100+'%'},1500);
+		    $(".rnav li").eq().addClass("active").siblings().removeClass("active");
+		})
+	})
+</script>-->
+	</body>
+
+</html>
