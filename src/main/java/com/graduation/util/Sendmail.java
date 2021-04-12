@@ -20,7 +20,7 @@ public class Sendmail {
 	
 	public static void main(String[] args) {
 		try {
-			send_email("2870212632@qq.com","测试","你好！");
+			send_email("接收邮箱号","测试","你好！");
 		} catch (AddressException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -44,10 +44,10 @@ public class Sendmail {
         properties.put("mail.smtp.port", "25");
         properties.put("mail.smtp.auth", "true");      
         
-        Authenticator authenticator = new Email_Authenticator("1518580532@qq.com", "kpquwvcqruxoidhe");  //wezyuiamkhhubaaf
+        Authenticator authenticator = new Email_Authenticator("发送者邮箱号", "邮箱设置的一个通行证");  //wezyuiamkhhubaaf //kpquwvcqruxoidhe
         javax.mail.Session sendMailSession = javax.mail.Session.getDefaultInstance(properties, authenticator);
         MimeMessage mailMessage = new MimeMessage(sendMailSession);
-        mailMessage.setFrom(new InternetAddress("1518580532@qq.com"));      
+        mailMessage.setFrom(new InternetAddress("发送者邮箱号"));      
         
         // Message.RecipientType.TO属性表示接收者的类型为TO
         mailMessage.setRecipient(Message.RecipientType.TO, new InternetAddress(to));
